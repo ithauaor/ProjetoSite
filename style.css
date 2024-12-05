@@ -1,0 +1,107 @@
+
+/* Reset básico */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8e8e8;
+    color: #1d1d1d;
+    margin: 0;
+    padding: 0;
+    background: url("./home/TRIAD-Login.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Barra de navegação */
+header {
+    background-color: #fefefe;
+    color: rgb(201, 72, 248);
+    text-align: center;
+    padding: 2rem 0; /* Aumentando a altura da barra */
+    font-size: 2.5rem;
+}
+
+header .triad {
+    color: #8A2BE2; 
+}
+
+header .sneakers {
+    color: rgb(168, 62, 255); 
+}
+
+/* Container de produtos */
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Estilo dos cards */
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    margin-bottom: 20px;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.product-card h2 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.product-card p {
+    font-size: 1.2rem;
+    color: #e44d26;
+    margin-bottom: 15px;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo do botão "Comprar Agora" */
+.buy-button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 15px; /* Espaço no final do card */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #45a049;
+}
+
+/* Responsividade: ajustando para telas menores */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
