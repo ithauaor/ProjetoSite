@@ -1,118 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bem Vindo a TRIAD Sneakers</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        /* Estilo básico para o botão */
-        .buy-button {
-            background-color: #4CAF50; /* Verde */
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin-top: 10px;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .buy-button:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <title>Triad Login</title>
 </head>
+
 <body>
-    <!-- Barra de navegação -->
-    <header>
-        <h1>Bem Vindo a <span class="triad">TRIAD</span> <span class="sneakers">Sneakers</span></h1>
-    </header>
+    <main class= "container">
+        <form>      
+            <h1>TRIAD Login</h1>
+            <div class="input-box">
+                <input placeholder="Usuário" type="Usuário">
+                <i class="bx bxs-user"></i>
 
-    <!-- Container para os tênis -->
-    <section class="product-container">
-        <!-- Card 1 -->
-        <div class="product-card">
-            <img src="home/air force.jpg" alt="Tênis Air Force">
-            <h2>Air Force</h2>
-            <p>R$ 599,90</p>
-            <button class="buy-button">Comprar Agora</button>
-        </div>
+            </div>
+            <div class="input-box">
+                <input placeholder="Senha" type="password">
+                <i class="bx bxs-lock-alt"></i>
+            </div>
 
-        <!-- Card 2 -->
-        <div class="product-card">
-            <img src="home/adidas.jpg" alt="Tênis Adidas">
-            <h2>Adidas</h2>
-            <p>R$ 499,90</p>
-            <button class="buy-button">Comprar Agora</button>
-        </div>
+            <div class="remember-forgot">
+            <label>
+                <input type="checkbox">
+                Lembrar senha
+            </label>
+            <a href="#">Esqueci a senha</a>
+            <div>
 
-        <!-- Card 3 -->
-        <div class="product-card">
-            <img src="home/puma.jpg" alt="Tênis Puma">
-            <h2>Puma</h2>
-            <p>R$ 399,90</p>
-            <button class="buy-button">Comprar Agora</button>
-        </div>
+                <button type="submit" class="login">Login</button>
 
-        <!-- Card 4 -->
-        <div class="product-card">
-            <img src="home/dunk.jpg" alt="Tênis Nike Dunk SB">
-            <h2>Nike SB</h2>
-            <p>R$ 499,90</p>
-            <button class="buy-button">Comprar Agora</button>
-        </div>
+                <div Class="resister-link">
+                    <p> Não tem uma Conta? <a href="#">Cadastra-se</a></p>
+                </div>
 
-        <!-- Card 5 -->
-        <div class="product-card">
-            <img src="home/reebok.jpg" alt="Tênis Reebok">
-            <h2>Reebok</h2>
-            <p>R$ 459,90</p>
-            <button class="buy-button">Comprar Agora</button>
-        </div>
+            </form>
 
-        <!-- Card 6 -->
-        <div class="product-card">
-            <img src="home/under armour.jpg" alt="Tênis Under Armour">
-            <h2>Under Armour</h2>
-            <p>R$ 549,90</p>
-            <button class="buy-button">Comprar Agora</button>
-        </div>
 
-        <!-- Card 7 -->
-        <div class="product-card">
-            <img src="home/new balance.jpg" alt="Tênis New Balance">
-            <h2>New Balance</h2>
-            <p>R$ 629,90</p>
-            <button class="buy-button">Comprar Agora</button>
-        </div>
+    </main>
 
-        <!-- Card 8 -->
-        <div class="product-card">
-            <img src="home/vans.jpg" alt="Tênis Vans">
-            <h2>Vans</h2>
-            <p>R$ 399,90</p>
-            <button class="buy-button">Comprar Agora</button>
-        </div>
-
-        <!-- Card 9 -->
-        <div class="product-card">
-            <img src="home/jordan.jpg" alt="Tênis Jordan">
-            <h2>Jordan</h2>
-            <p>R$ 799,90</p>
-            <button class="buy-button">Comprar Agora</button>
-        </div>
-
-        <!-- Card 10 -->
-        <div class="product-card">
-            <img src="home/lebron.jpg" alt="Tênis LeBron">
-            <h2>Footlocker</h2>
-            <p>R$ 449,90</p>
-            <button class="buy-button">Comprar Agora</button>
-        </div>
-    </section>
 </body>
+
+
 </html>
